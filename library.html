@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignan's Book Library</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vignan's Book Library</h1>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search for a book...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Category Filter Section -->
+        <div class="filter-section">
+            <label for="categorySelect">Filter by Category:</label>
+            <select id="categorySelect">
+                <option value="All">All Categories</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-Fiction">Non-fiction</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+            </select>
+            <button id="filterBtn">Filter</button>
+        </div>
+
+        <!-- Book List Section -->
+        <div id="bookList" class="book-list"></div>
+
+        <!-- Borrowing History Section -->
+        <h2>Borrowing History</h2>
+        <div id="historyList" class="history-list"></div>
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>
